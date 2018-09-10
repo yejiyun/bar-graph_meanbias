@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+		<style>
+            svg { width: 450px; height: 400px;  display:block; margin:auto;
+            overflow: visible; }
+
+            .yAxis text{
+                display:none;
+            }
+            
+            .yAxis path{
+
+                fill:none;
+                stroke: #000;
+            }
+
+            .yAxis line{
+                stroke-width: 1px;
+                display:none;
+            }
+
+            .xAxis text{
+                display:none;
+            }
+            
+            .xAxis path{
+
+                fill:none;
+                stroke: #000;
+            }
+            
+            .xAxis line{
+                stroke-width: 1px;
+                display:none;
+            }
+            
+            .button{
+                width: 250px;
+                margin: 4em auto 4em;
+                
+            }
+            
+            .button input{
+                width: 250px;
+                font-size: 2em;
+            }
+            
+            #save-button{
+                display: none;
+            }
+		</style>
+	</head>
+	<body>
+		<div id="myGraph"></div>
+        <div id="start-button" class="button">
+            <input type="button" value="Start" onclick="start()"/>
+        </div>
+        
+        <div id="save-button" class="button">
+            <input type="button" value="Save Data" onclick="saveData()"/>
+        </div>
+        
+		<script src = "stacked8.js"></script>
+	</body>
+</html>
